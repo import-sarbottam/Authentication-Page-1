@@ -1,0 +1,45 @@
+body{
+    background-color: aqua;
+    letter-spacing: 1.5px;
+    font-family: 'Nunito', sans-serif;
+}
+#signupbody{
+    background-color:rgba(0, 0, 0, 0.747);
+    padding: 20px;
+    color: white;
+    margin: 5% auto;
+    height: 80%;
+    width: 30%;
+    border-radius: 3%;
+    box-shadow: 3px 3px 5px gray;
+}
+h2,h4,input{
+    margin-left: 8%;
+}
+input{
+    line-height: 2em;
+    border-radius: 5%;
+}
+button{
+    margin-left: 33%;
+    font-size: 1rem;
+}
+#signIn{
+    text-align: center;
+}
+#signupbut{
+    background-color: rgb(110, 197, 255);
+    padding: 10px 45px;
+    transition: 0.75s;
+    border-radius: 5%;
+    color: white;
+}
+#passwordMatch{
+    color: red;
+    text-align: center;
+}
+#signupbut:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgb(248, 112, 135);
+    transform: translateY(-2px)
+}
