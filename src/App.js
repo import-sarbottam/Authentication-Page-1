@@ -25,8 +25,9 @@ function App() {
          <div className="Forgetpass">
             <a href="#">Forgot  password?</a>
           </div>
-
+         <div className="googlecont">
          <button className="googlebtn"> <img src={google} alt="" width="25px"  className="googleimg"/> <p className="loginwithg">login with Google</p></button>
+         </div>
          </div>
 
       </div>

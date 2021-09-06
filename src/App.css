@@ -74,9 +74,12 @@ body{
   text-decoration: none;
   color: white;
 }
+.googlecont{
+  display: flex;
+  justify-content: center;
+}
 .googlebtn{
   margin-top: 45px;
-  margin-left: 4%;
   border-radius: 4px;
   border: none;
   padding:0px 60px;
@@ -106,4 +109,13 @@ body{
   .authentication-box{
     width: 65%;
   }
+}
+
+
+@media screen and (max-width:500px) {
+  .authentication-box{
+    width: 82%;
+    height: 100vh;
+  }
+
 }
