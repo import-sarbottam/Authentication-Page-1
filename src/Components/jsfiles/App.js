@@ -10,6 +10,7 @@ import {
 import { Signup } from './Signup';
 import { Signin } from './Signin';
 import { Forgotpass } from './Forgotpass';
+import { AuthProvider } from './AuthContext'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router>
         <Switch>
         <Route exact path='/signin'>
             <Signin />
@@ -31,9 +32,17 @@ function App() {
             <Forgotpass/>
           </Route>
         </Switch>
+      </Router> */}
+      <Router>
+        <AuthProvider>
+          <Switch>
+            {/* <Route path="/" exact component={Profile} /> */}
+            <Route path="/signup" component={Signup} />
+            <Route path="/forgot" component={Forgotpass} />
+            <Route path="/signin" component={Signin} />
+          </Switch>
+        </AuthProvider>
       </Router>
-
-
     </>
   );
 }
